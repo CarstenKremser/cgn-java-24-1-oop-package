@@ -10,5 +10,16 @@ public class Main {
         };
         Library myLibrary = new Library(myBooks);
         System.out.println(myLibrary);
+
+        // add a new Book
+        Book myNewBook = new Book("Gerthsen Physik","Dieter Meschede","3-540-42024-X");
+        myLibrary.addBook(myNewBook);
+        System.out.println("Added Book");
+        System.out.println(myLibrary);
+
+        // Remove Book "Looking good in Print"
+        myLibrary.removeBookAtIndex(1);
+        System.out.println("Removed Book");
+        System.out.println(myLibrary);
     }
 }
