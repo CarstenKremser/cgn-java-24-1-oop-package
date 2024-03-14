@@ -3,7 +3,11 @@ package de.neuefische.cgnjava241.ooppackage;
 import java.util.Arrays;
 
 public class Library {
-    Book[] books;
+    private Book[] books;
+
+    public Library(Book[] books) {
+        this.books = books;
+    }
 
     @Override
     public String toString() {
